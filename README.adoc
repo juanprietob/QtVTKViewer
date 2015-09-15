@@ -1,45 +1,27 @@
-= SPINEUtilsCXX
+= QtVTKViewer
 
 == Description 
 
-This project has some of the back-end programs and utilities for SPINE
-
-You can find the following utilities:
-
-. SPINE contour manipulation.
-.. ContoursIO: read, write.
-.. Contour interpolation: bezier interpolation.
-.. Contour values: area and perimeter calculation.
-
-. Contour statistics:
-.. link:https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=0CEAQFjAD&url=http%3A%2F%2Fcs.unc.edu%2F~yihong%2Findex_files%2Fweighted_functional_boxplot_miccai_2013.pdf&ei=MBgGVLyyHpHzgwSygYH4Aw&usg=AFQjCNE_yaxhXWFeWQBfqHF3mXf5j4Dosg&sig2=C7oOwWRkO35fLrFi0DVjYA&bvm=bv.74115972,d.eXY[Weighted Functional Boxplot with Application to Statistical Atlas Construction]
-
-. Image manipulation:
-.. Resampling: Image ares converted from DICOM or nifti to RAS space.
-
+This project is a light medical image viewer. 
+It has gpu volume rendering capabilities for rgb images and surface rendering for gray scale level images. 
 
 == Requirements:
-ITK, VTK, Xerces, CMake, json-c, gdcm
+CMake, Qt. 
+You can install this packages in your system with any package manager. Homebrew for MAC, apt-get for Debian systems and yum for Redhat
 
-ITK option for 'support version 3' must be on -> ITKV3_COMPATIBILITY ON
+=== Building
 
-=== GDCM
+---- [sh]
+git clone https://github.com/juanprietob/QtVTKViewer
+mkdir QtVTKViewerBin
+cd QtVTKViewer
+cmake ../QtVTKViewer
+make
+---- [sh]
 
-To install GDCM please download the sources from the link:https://github.com/juanprietob/GDCM.git[git] repository 
+=== Executing
 
-This program will dump the header of a DICOM file in JSON format. 
-It is more robust than the pydicom version used before. 
-GDCM is also used for image anonymization.
-
-Turn on the following variables when executing CMAKE for GDCM. Select 'Show advance settings' for some of these variables. 
-
-[source, CMAKE]
-----
-GDCM_BUILD_APPLICATIONS ON
-
-GDCM_USE_SYSTEM_OPENSSL ON
-----
-
-Compile and install GDCM.
-
+---- [sh]
+./bin/qtvtkviewer <Image filename>
+---- [sh]
 
