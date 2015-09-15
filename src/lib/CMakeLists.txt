@@ -1,0 +1,2 @@
+SUBDIRS(Qt)
+SUBDIRS(VTKObjects)
