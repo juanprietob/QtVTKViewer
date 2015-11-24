@@ -11,17 +11,18 @@ You can install this packages in your system with any package manager. Homebrew 
 
 === Building
 
----- [sh]
+[source,shell]
+----------
 git clone https://github.com/juanprietob/QtVTKViewer
 mkdir QtVTKViewerBin
 cd QtVTKViewer
 cmake ../QtVTKViewer
 make
----- [sh]
+----------
 
 === Executing
 
----- [sh]
+[source,shell]
+----------
 ./bin/qtvtkviewer <Image filename>
----- [sh]
-
+----------
