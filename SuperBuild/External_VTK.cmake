@@ -42,7 +42,7 @@ if(${VTK_VERSION_MAJOR} STREQUAL "6")
 endif()
 
 if(USE_VTKv6)
-  set(${extProjName}_REQUIRED_VERSION "6.3")  #If a required version is necessary, then set this, else leave blank
+  set(${extProjName}_REQUIRED_VERSION "6.2")  #If a required version is necessary, then set this, else leave blank
 else()
   set(${extProjName}_REQUIRED_VERSION "5.10")  #If a required version is necessary, then set this, else leave blank
 endif()

@@ -66,6 +66,7 @@ include(${QT_USE_FILE})
 
 
 find_package(VTK REQUIRED COMPONENTS ${Slicer_VTK_COMPONENTS} )
+message(STATUS ${VTK_USE_FILE})
 include(${VTK_USE_FILE})
 
 
