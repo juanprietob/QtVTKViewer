@@ -14,8 +14,8 @@ You can install this packages in your system with any package manager. Homebrew 
 [source,shell]
 ----------
 git clone https://github.com/juanprietob/QtVTKViewer
-mkdir QtVTKViewerBin
-cd QtVTKViewer
+mkdir QtVTKViewer-build
+cd QtVTKViewer-build
 cmake ../QtVTKViewer
 make
 ----------
