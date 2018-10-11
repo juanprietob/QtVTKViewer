@@ -22,7 +22,9 @@ make
 
 === Executing
 
+The executable will be placed in the 'inner' build folder (or search for qtvtkviewer executable)
+
 [source,shell]
 ----------
-./bin/qtvtkviewer <Image filename>
+QtVTKViewer-build/bin/qtvtkviewer <Image filename>
 ----------
